@@ -10,45 +10,30 @@
 (function($) {
 	$.fn.tshift = function() 
 	{
-		start = 0;
-		$(this).click(function(event) 
+		var start = 0;
+		var checkboxes = $("#"+ this.attr('id') +" :checkbox");
+	    checkboxes.live("click", function(event)
 		{
-			name = $(this).closest('div').attr('id');
 			if(this.checked)
 			{
-				if(!event.shiftKey)
+				if(event.shiftKey)
 				{
-					start = Math.abs(this.value);
-				}
-				else
-				{
-  	 				end = Math.abs(this.value);
-  	 				if( end < start )
+  	 				end = checkboxes.index(this);
+  	 				if(end < start)
   	 				{
  						end   = start;
- 						start = Math.abs(this.value)
+ 						start = checkboxes.index(this);
   	 				}
-					doCheck();
+					checkboxes.each(function(index) {
+						if (index >= start && index < end)
+						{
+							this.checked = true;
+						}
+					});
 				}
+				start = checkboxes.index(this);
 			}
 		});
 		return this;
 	};
-	function doCheck()
-	{
-		var div    = document.getElementById(name);
-		var inputs = div.getElementsByTagName('input');
-		$.each(inputs, function(i, val) 
-		{
-			if ( inputs[i].type == 'checkbox' )
-			{
-				if ( inputs[i].value >= start && inputs[i].value <= end )
-				{
-					inputs[i].checked = true;
-				}
-					
-			}
-		});
-		return true;
-	}
 })(jQuery);
