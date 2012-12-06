@@ -39,7 +39,7 @@ Trigger the plugin using the following code:
 
     <script>
         $(document).ready(function() {
-        	$('#required_id').tshift();
+        	$('#my_id').tshift();
         });
     </script>
 
