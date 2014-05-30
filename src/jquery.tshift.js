@@ -12,7 +12,7 @@
 	{
 		var start = 0;
 		var checkboxes = $("#"+ this.attr('id') +" :checkbox");
-	    checkboxes.live("click", function(event)
+	    checkboxes.on("click", function(event)
 		{
 			if(this.checked)
 			{

@@ -6,16 +6,16 @@ It was built using the jQuery library.
 Author
 ------
 Copyright (c) 2012 Alfredo Berumen Saldivar <br>
-<a href="http://alfredberumen.com" target="_blank">http://alfredberumen.com</a> <br>
-@berumen
+<a href="http://berumen.pw" target="_blank">http://berumen.pw</a> <br>
+<a href="https://twitter.com/berumen">@berumen</a><br>
 
 How to use
 ----------
 Include tShift plugin in your website directory then load files in the <head> section of your HTML document.
-Don't forget to add the jQuery library version 1.6+.
+Don't forget to add the jQuery library version 1.9+.
 
 	<head>
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
         <script type="text/javascript" src="/jquery.tshift.min.js"></script>
     </head>
 
@@ -49,7 +49,7 @@ For a live demonstration visit:
 <a href="http://jsfiddle.net/berumen/2nx2B/" target="_blank">tShift demo</a>
 
 Or visit the official web page:
-<a href="http://alfredberumen.com/b/seleccionar-multiples-checkboxes-con-tshift" target="_blank">Official site</a>
+<a href="http://berumen.github.io/tShift/" target="_blank">Official site</a>
 
 	
 License
