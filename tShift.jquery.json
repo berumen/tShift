@@ -2,20 +2,15 @@
   "name": "tShift",
   "title": "jQuery tShift",
   "description": "tShift is a jquery plugin that allows you to use shift selection in your checkboxes.",
-  "keywords": [
-    "jquery",
-    "checkbox",
-	"selection",
-    "plugins"
-  ],
-  "version": "1.2.3",
+  "keywords": ["jquery", "checkbox", "selection", "plugins"],
+  "version": "2.0.0",
   "author": {
     "name": "Alfredo Berumen",
     "url": "https://github.com/berumen"
   },
   "maintainers": [
     {
-      "name": "Alfredo Berumen",
+      "name": "berumen",
       "url": "https://github.com/berumen"
     }
   ],
@@ -30,6 +25,6 @@
   "docs": "https://github.com/berumen/tShift/blob/gh-pages/README.md",
   "download": "https://github.com/berumen/tShift/archive/gh-pages.zip",
   "dependencies": {
-    "jquery": ">=1.9"
+    "jquery": ">=1.12.4"
   }
 }
